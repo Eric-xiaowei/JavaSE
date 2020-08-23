@@ -52,6 +52,21 @@ public class TestArray3_DoubleBall {
         return b;
     }
 
+    //选红球的方法2：【交换思想】
+    private static int[] xhq2(int[] r) {
+        int[] a = new int[5];
+        Random random = new Random();
+        int index,t;
+        for(int i=0;i<a.length;i++){
+            index = random.nextInt(33);
+            t=r[index];
+            r[index]=r[i];
+            r[i]=t;
+            a = Arrays.copyOf(r,5);
+        }
+        return a;
+    }
+
     //创建数组并给数组进行赋值的方法：
     private static int[] cjsz(int i) {
         int[] a = new int[i];
