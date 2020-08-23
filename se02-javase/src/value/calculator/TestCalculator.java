@@ -1,4 +1,4 @@
-package calculator;
+package value.calculator;
 
 
 import org.junit.Test;

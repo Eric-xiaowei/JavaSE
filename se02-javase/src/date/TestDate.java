@@ -12,7 +12,7 @@ public class TestDate {
         System.out.println(format);
 
         //字符串转日期格式:
-        Date parse = new SimpleDateFormat("yyyy-MM-dd").parse(format);
+        Date parse = new SimpleDateFormat("yyyy-MM-dd").parse(format);//输入的是字符串
         System.out.println(parse);
 
 
