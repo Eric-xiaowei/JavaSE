@@ -24,7 +24,7 @@ public class TestString {
         System.out.println(s);
 
         //String创建对象的次数：
-        String s2=new String("c");//至少创建一次：
+        String s2=new String("c");//至少创建一次对象：
 
         //测试：String和StringBuffer的区别：
         String s1 = "abc";
