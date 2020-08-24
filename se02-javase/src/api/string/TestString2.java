@@ -42,10 +42,14 @@ public class TestString2 {
         String trim = str.trim();
         System.out.println(trim);
     }
-
+    //将其他类型转化为字符串类型,并转化为char类型的数组
     @Test
     public void test4(){
-        System.out.println(String.valueOf(9.9)+1);
+        String str = String.valueOf(9.9) + 1;
+        char[] chars = str.toCharArray();
+        for (char i : chars) {
+            System.out.println(i);
+        }
     }
 
 
