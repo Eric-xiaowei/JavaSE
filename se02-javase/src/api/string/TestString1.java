@@ -4,7 +4,7 @@ package api.string;
  * @author:ZhangXiaowei
  * @create:2020-08-2020/8/22-11:03
  */
-public class TestString {
+public class TestString1 {
     public static void main(String[] args) {
         //测试：将一个字符串进行翻转的方法：
         //方法一：
