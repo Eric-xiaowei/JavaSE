@@ -15,6 +15,5 @@ public class TestDate {
         Date parse = new SimpleDateFormat("yyyy-MM-dd").parse(format);//输入的是字符串
         System.out.println(parse);
 
-
     }
 }

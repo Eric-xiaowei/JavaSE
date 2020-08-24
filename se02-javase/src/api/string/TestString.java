@@ -1,4 +1,4 @@
-package string;
+package api.string;
 
 /**
  * @author:ZhangXiaowei
