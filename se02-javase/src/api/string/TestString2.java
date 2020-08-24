@@ -27,6 +27,7 @@ public class TestString2 {
         char charAt = str.charAt(b);
         System.out.println(charAt);
     }
+
     //对字符串进行切割：
     @Test
     public void test2(){
@@ -35,6 +36,7 @@ public class TestString2 {
         System.out.println(sub1);
         System.out.println(sub2);
     }
+
     //对字符串两边多余的空格进行清除
     @Test
     public void test3(){
@@ -42,12 +44,22 @@ public class TestString2 {
         String trim = str.trim();
         System.out.println(trim);
     }
+
     //将其他类型转化为字符串类型,并转化为char类型的数组
     @Test
     public void test4(){
         String str = String.valueOf(9.9) + 1;
         char[] chars = str.toCharArray();
         for (char i : chars) {
+            System.out.println(i);
+        }
+    }
+
+    //将字符串转化为字节数组，然后进行输出
+    @Test
+    public void test5(){
+        byte[] bytes = str3.getBytes();
+        for (byte i : bytes) {
             System.out.println(i);
         }
     }
