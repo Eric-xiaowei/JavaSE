@@ -21,7 +21,7 @@ public class TestFile {
             if(i.isFile()){//如果是一个文件，那么直接计算它的大小
                 sum += i.length();
             }else {
-                sum += size(i);
+                sum += size(i);//递归调用
             }
         }
         return sum;
