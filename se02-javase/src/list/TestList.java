@@ -19,6 +19,14 @@ public class TestList {
         for(int i=0;i<5;i++){
             list.add(i);
         }
+        Collections.sort(list);
+        Collections.reverse(list);
+        List<Integer> list1 = (List<Integer>) Collections.unmodifiableCollection(list);
+        //Collections.reverse(list1);//Collections$UnmodifiableCollection cannot be cast
+        System.out.println(list1);
+
+        Integer max = Collections.max(list);
+        System.out.println(max);
         System.out.println(list);
         //2.使用迭代器进行遍历：
         Iterator<Integer> iterator = list.iterator();
